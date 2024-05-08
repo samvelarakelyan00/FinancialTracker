@@ -1,4 +1,17 @@
+# Standard
+# ...
+
+# FastAPI
 from fastapi import FastAPI
+
+# Own modules
+from database import engine
+from models import models
+
+from api import router
+
+
+# models.Base.metadata.create_all(bind=engine)
 
 
 app = FastAPI(
@@ -6,6 +19,4 @@ app = FastAPI(
 )
 
 
-@app.get("/")
-def main():
-    return {"message": "OK"}
+app.include_router(router)

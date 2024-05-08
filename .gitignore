@@ -1,2 +1,10 @@
 .idea
 venv
+app/__pycache__/__init__.cpython-310.pyc
+app/__pycache__/database.cpython-310.pyc
+app/api/__pycache__/
+app/api/endpoints/__pycache__/
+app/core/__pycache__/
+app/models/__pycache__/
+app/schemas/__pycache__/
+app/services/__pycache__/
